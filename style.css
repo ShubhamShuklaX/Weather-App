@@ -3,6 +3,9 @@
   height: 350px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mainContainer {
   height: 100vh;
@@ -10,6 +13,17 @@
   justify-content: center;
   align-items: center;
 }
+.weather-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -17,22 +31,45 @@
 
 .container {
   display: flex;
-  gap: 200px;
   flex-direction: column;
 }
 
 .header div {
-  font-size: 25px;
+  font-size: 30px;
+  padding: 10px;
 }
 
 .picContainer {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  align-items: center;
+  margin-bottom: 200px;
 }
 
 .picContainer img {
   width: 65px;
   height: 65px;
-  margin-top: 25px;
+  border-radius: 20%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 1;
+  margin: 10px;
+}
+
+.City {
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.City select {
+  width: 90px;
+  height: 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.City select:hover {
+  cursor: pointer;
 }
