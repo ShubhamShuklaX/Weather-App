@@ -1,19 +1,29 @@
-.box {
-  width: 260px;
-  height: 350px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 20px;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.mainContainer {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.weather-bg {
+
+.container {
+  background-color: whitesmoke;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+img {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,55 +31,31 @@
   height: 100%;
   z-index: -1;
   object-fit: cover;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.header div {
-  font-size: 30px;
+.search-box input {
   padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
-.picContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 200px;
-}
-
-.picContainer img {
-  width: 65px;
-  height: 65px;
-  border-radius: 20%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  opacity: 1;
-  margin: 10px;
-}
-
-.City {
-  font-size: 20px;
+.search-box button {
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.City select {
-  width: 90px;
-  height: 20px;
-  border-radius: 5px;
-  margin-left: 10px;
-}
-.City select:hover {
+  border: none;
+  background-color: #0077b6;
+  color: white;
+  border-radius: 8px;
+  margin-left: 5px;
   cursor: pointer;
+  margin-top: 18px;
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
 }
